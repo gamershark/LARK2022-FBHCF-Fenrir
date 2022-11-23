@@ -1,10 +1,10 @@
 Welcome to LARK
-		the Linux Activity to Reinforce Knowledge
+	the Linux Activity to Reinforce Knowledge
 
-Name of game:
+Name of Game:
 
-Developed by: Christian Rodriguez and Jacob Paccione
+Developed by: Jacob Paccione and Christian Rodriguez
 
-Narrative: A group of time travelers meat for the annual ITA (International Time Association) metting, when overnight, one suddenly gets murdered and their body has been hidden. Now it's up to you to figure out who did the deed, what they used as a weapon, and when.
+Narrative: You play as the host of the Internation Time Metting, a conference of the world's most powerful time travelers. On the first night of the conference, one of the guests suddenly gets killed, and now it's your job to figure out who did the deed, but also with what weapon, and when.
 
 Instructions:
