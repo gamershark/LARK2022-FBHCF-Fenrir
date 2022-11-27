@@ -40,7 +40,7 @@ EOF
     2) clear
        echo "<GAME NAME> is a command line game intended to teach players the basics of the Linux BASH shell.
 
-You play as the host of the Internation Time Metting, a conference of the world's most powerful time travelers. On the first night of the conference, one of the guests suddenly gets killed, and now it's your job to figure out who did the deed, but also with what weapon, and when.
+You play as the host of the Internation Time Metting, a conference of the world's most powerful time travelers. On the first night of the conference, one of the guests suddenly gets killed, and now it's your job to figure out who did the deed, but also when.
 
 Press any key to exit back to the main menu."
        read -n 1

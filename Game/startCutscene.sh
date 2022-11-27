@@ -67,9 +67,8 @@ sleep 1
 echo ""
 printf "Being the host, now it's your job to not only figure out who was the killer, "
 sleep 1
-printf "but also with what weapon, "
+printf "but also when. "
 sleep 1
-echo "and when."
 echo ""
 echo "Press any key to continue"
 read -n 1
