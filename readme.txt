@@ -1,7 +1,7 @@
 Welcome to LARK
 	the Linux Activitiy to Reinforce Knowledge
 
-Name of Game:
+Name of Game: Bloodstained Clock
 
 Developed by: Jacob Paccione and Christian Rodriguez
 

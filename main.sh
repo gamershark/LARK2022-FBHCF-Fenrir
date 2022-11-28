@@ -22,8 +22,8 @@ tput smcup
 function mainMenu() {
     clear
     cat <<EOF
-    MAIN MENU
-=================
+  BLOODSTAINED CLOCK
+======================
 1. New Game
 2. About
 0. Quit
@@ -39,7 +39,7 @@ EOF
        . Game/startCutscene.sh
        ;;
     2) clear
-       echo "<GAME NAME> is a command line game intended to teach players the basics of the Linux BASH shell.
+       echo "Bloodstained Clock is a command line game intended to teach players the basics of the Linux BASH shell.
 
 You play as the host of the Internation Time Metting, a conference of the world's most powerful time travelers. On the first night of the conference, one of the guests suddenly gets killed, and now it's your job to figure out who did the deed, but also when.
 
