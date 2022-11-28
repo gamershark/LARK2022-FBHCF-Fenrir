@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat <<EOF
+Interacting with the accusation button will not allow you to continue with asking characters questions or interacting with other objects. Are you sure you want to Continue?
+
+[Y]es
+[N]o
+EOF
+
+read -p "Enter selection [Y/N]: " selection
+
+case $selection in
+Y)
+    sleep 1
+    . accusation.sh
+    ;;
+N)
+    ;;
+esac

@@ -1,0 +1,61 @@
+#!/bin/bash
+
+clear
+sleep 1
+
+cat <<EOF
+What do you want to ask Mort about?
+1. If he knows anything about the murderer
+2. If he knows anything about the time period
+0. Nevermind
+EOF
+
+read -p "Enter selection [0-2]: " selection
+
+sleep 1
+
+case $selection in
+1)
+    if [[ $KILLER -eq 0 ]]; then
+	tput bold; printf "Mort: "; tput sgr0; printf "Theodora's been scaring me a lot with her sense of royalty."
+	sleep 1; echo "I get she's a princess, but it's scary that she acts so heartless."
+    elif [[ $KILLER -eq 1 ]]; then
+	tput bold; printf "Mort: "; tput sgr0; printf "Personally, Robert is scary. "
+	sleep 1; printf "From one warman to another, even with my better technology, "
+	sleep 1; echo "Robert feels like he has a lack of heart."
+    elif [[ $KILLER -eq 2 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "Tim has been acting real dangerous lately. "
+	sleep 1; printf "I think I saw him acting odd around Kay earlier before I went back to my time, "
+	sleep 1; echo "but again people were drinking today."
+    elif [[ $KILLER -eq 3 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "Adam just seemed too quiet today. "
+	sleep 1; echo "Someone just got killed, and I wasn't able to even find him until earlier."
+    else
+	tput bold; printf "Mort: "; tput srg0; printf "I've been busy last night with issues at home to even be out here today. "
+	sleep 1; echo "You can probably ask others and they'll agree."
+    fi
+    ACTIONS=$ACTIONS+1
+    checkActions
+    ;;
+2)
+    if [[ $LOCATION -eq 0 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "The future calls the past and the future is scared. "
+	sleep 1; echo "Theodora keeping her portal open is a tad weird, especially when some other closed theirs."
+    elif [[ $LOCATION -eq 1 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "There are so many weapons and I noticed kay there yesterday, "
+	sleep 1; echo "I'm scared it may just be around the Great War."
+    elif [[ $LOCATION -eq 2 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "Nearly everyone in the wild west owns a gun, "
+	sleep 1; echo "to where any outsider may get shot on site."
+    elif [[ $LOCATION -eq 3 ]]; then
+	tput bold; printf "Mort: "; tput srg0; printf "I'm sure I saw Adam and Kay walk through his portal some time in the night, "
+	sleep 1; echo "so it could've gone down there."
+    else
+	tput bold; printf "Mort: "; tput srg0; printf "I'm sure that I closed my own portal after heading back to my own time. "
+	sleep 1; echo "I could be wrong, but I'm usually very consistent with things like this."
+    fi
+    ACTIONS=$ACTIONS+1
+    checkActions
+    ;;
+0)
+    ;;

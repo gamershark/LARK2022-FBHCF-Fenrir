@@ -1,0 +1,63 @@
+#!/bin/bash
+
+clear
+sleep 1
+
+cat <<EOF
+What do you want to ask Robert about?
+1. If he knows anything about the murderer
+2. If he knows anything about the time period
+0. Nevermind
+EOF
+
+read -p "Enter selection [0-2]: " selection
+
+sleep 1
+
+case $selection in
+1)
+    if [[ $KILLER -eq 0 ]]; then
+	tput bold; printf "Robert: "; tput sgr0; printf "Mort scares me, personally. "
+	sleep 1; printf "As someone in the midst of fighting in a war, "
+	sleep 1; echo "Mort's ego and weaponry especially gives me the wrong look for him."
+    elif [[ $KILLER -eq 1 ]]; then
+	tput bold; printf "Robert: "; tput sgr0; printf "Tim's only the most dangerous assassin in his times. "
+	sleep 1; printf "I don't know who else you've talked to, "
+	sleep 1; echo "but him having any weapons give me anxiety."
+    elif [[ $KILLER -eq 2 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "Peronsally, kid, "
+	sleep 1; printf "I have way too many problems in my own time to pay much attention to this. "
+	sleep 1; echo "I'm just here to get the time period's name on attendance."
+    elif [[ $KILLER -eq 3 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "Adam is one of the fellows here that I've always been 50/50 about. "
+	sleep 1; echo "He doesn't seem like he wants to be here, other than to cause mischief."
+    else
+	tput bold; printf "Robert: "; tput srg0; printf "I've always had a little distrust for Theodora, "
+	sleep 1; echo "but especially this event she's been acting somewhat scarily weird."
+    fi
+    ACTIONS=$ACTIONS+1
+    checkActions
+    ;;
+2)
+    if [[ $LOCATION -eq 0 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "The tech from the far far future is just too advanced for even me to understand. "
+	sleep 1; echo "And personally, it must be dead easy to commit a crime there."
+    elif [[ $LOCATION -eq 1 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "There isn't much tech out in the Wild West for a murder to be trackable, "
+	sleep 1; echo "but Tim's town is so small that it may balance out."
+    elif [[ $LOCATION -eq 2 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "Why would anyone want to commit a murder from my time? "
+	sleep 1; printf "Though, they could've just thrown Kay into an active warzone, "
+	sleep 1;echo "but one of my lookers would've seen that."
+    elif [[ $LOCATION -eq 3 ]]; then
+	tput bold; printf "Robert: "; tput srg0; printf "I think I saw Kay walk into Adam's portal at some point, "
+	sleep 1; echo "but Adam's time is weird for her to enter to, unless she was with Adam."
+    else
+	tput bold; printf "Robert: "; tput srg0; printf "I don't trust the old middle ages portal. "
+	sleep 1; echo "Theodora keeping that thing open is a gateway for disease and arrows."
+    fi
+    ACTIONS=$ACTIONS+1
+    checkActions
+    ;;
+0)
+    ;;

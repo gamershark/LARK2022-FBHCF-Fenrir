@@ -84,7 +84,7 @@ sleep 1
 PS1="[ Location: Hub | Day 1 ]$ "
 printf "Since there's limited time of the conference, "
 sleep 1
-echo "you only have 5 days to determine a suspect."
+echo "you only have 3 days to determine a suspect."
 sleep 1
 echo "The attendees wish you luck, and send you on your way."
 echo ""

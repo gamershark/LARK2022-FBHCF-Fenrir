@@ -130,6 +130,12 @@ function checkActions() {
 
 	    PS1="[ Location: Hub | Day 2 ]$ "
 	    sleep 1
+	    ACTIONS=0
+	    cp Hub/.time-middle Hub/MiddleAges
+	    cp Hub/.time-wild Hub/WildWest
+	    cp Hub/.time-war Hub/GreatWar
+	    cp Hub/.time-max Hub/MadMax
+	    cp Hub/.time-star Hub/StarWars
 	    echo "You awake to find some new additions to your hub. Use the command 'ls' to observe your new surroundings."
 	elif [[ $DAY -eq 2 ]]; then
 	    echo "You've made it to the end of day two."
@@ -142,6 +148,8 @@ function checkActions() {
 
 	    PS1="[ Location: Hub | Day 3 ]$ "
 	    sleep 1
+	    ACTIONS=0
+	    cp Hub/.accusationButton AccusationButton
 	    echo "You awake to find one last addition to your hub. Use the 'ls' command to observe your new surroundings."
 	elif [[ $DAY -eq 3 ]]
 	    echo "You've made it to the end of day three, and the end of your investigation."
@@ -161,6 +169,11 @@ function ls() {
 	printf "Good job! You can see there are two types of files open now. Green files are characters you can interact with by typing '. <character name>', "
 	sleep 1
 	echo "and white files are standard objects you can inspect with 'cat <object name>'."
+    else
+	echo ""
+	printf "The blue item names are time periods that you can now travel to to talk to characters or inspect objects."
+	sleep 1
+	echo "Type 'cd <directory name>' to enter that time period, and 'cd ..' to go back."
     fi
     LS_COUNT=$LS_COUNT+1
 }

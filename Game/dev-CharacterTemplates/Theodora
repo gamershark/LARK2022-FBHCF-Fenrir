@@ -48,6 +48,7 @@ case $selection in
 	echo "But this was before I went back to my time, so I can't be sure."
     fi
     ACTIONS=$ACTIONS+1
+    checkActions
     ;;
 2)
     if [[ $LOCATION -eq 0 ]]; then
@@ -73,6 +74,7 @@ case $selection in
 	echo "It wouldn't surprise me at all if anything bad happened over there."
     fi
     ACTIONS=$ACTIONS+1
+    checkActions
     ;;
 0)
     ;;

@@ -35,6 +35,7 @@ EOF
        sleep 1
        screenSize
        clear
+       . Game/reset.sh
        . Game/startCutscene.sh
        ;;
     2) clear
