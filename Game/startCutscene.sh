@@ -20,9 +20,9 @@ read -n 1
 tput cuu1
 echo "The group that make up the conference include:"
 sleep 1
-tput setaf 5; printf "Princess Theodora"; sleep 1; tput setaf 7; echo ", the most royal princess from the middle ages,"
+tput setab 0; setaf 5; printf "Princess Theodora"; sleep 1; tput sgr0; tput setaf 7; echo ", the most royal princess from the middle ages,"
 sleep 1
-tput setaf 3; printf "Cantankerous Tim"; sleep 1; tput setaf 7; echo ", the most powerful gunsman of the wild west,"
+tput setaf 3; printf "Cantankerous Tim"; sleep 1; tput sgr0; echo ", the most powerful gunsman of the wild west,"
 sleep 1
 tput setaf 2; printf "Robert Carlton"; sleep 1; tput setaf 7; echo ", the brightest engineer from the times of the Great War,"
 sleep 1
@@ -31,7 +31,7 @@ sleep 1
 tput setaf 4; printf "Kay"; sleep 1; tput setaf 7; echo ", the strongest warrior of the Mad Max-esque future,"
 sleep 1
 printf "and finally "; sleep 1; tput setaf 1; printf "Mort Matten"; sleep 1; tput setaf 7; echo ", the creator of the Space Ranger league from a future far, far away."
-echo "" 
+echo ""
 echo "Press any key to continue"
 read -n 1
 
