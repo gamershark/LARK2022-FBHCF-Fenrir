@@ -2,7 +2,7 @@
 
 # Picks murderer and assigns value to variables
 # Person = KILLER
-# Time Peroid = PLACE
+# Time Period = PLACE
 function pickMurderer() {
     characters[0]="theodora"
     characters[1]="tim"
@@ -88,7 +88,7 @@ function setLocations() {
 	mv $FILELOCATION/Hub/.time-war/.char-mort $FILELOCATION/Hub/.time-war/Mort
     fi
 
-    # Mad Max
+    #Mad Max (WWIV)
     MAX_CHAR1=$(($RANDOM % $char_size))
     while [ $MAX_CHAR1 -eq ($HUB_CHAR1 || $HUB_CHAR2 || $MIDDLE_CHAR1 || $WAR_CHAR1) ]; do
 	MAX_CHAR1=$(($RANDOM % $char_size))
@@ -107,7 +107,9 @@ function setLocations() {
 }
 
 # Instructions
-printf "You start in the Hub area, located in present day Lakeland. "
+printf "You start in the Hub area, located in present day Lakeland. Well, present to you anyway."
 sleep 1
-printf "Use the command "; tput bold; printf "ls "; tput sgr0; echo "to list useful locations or objects."
+printf "Use the command "; tput bold; printf "ls"; tput sgr0; echo " to list useful locations or objects."
+sleep 1
+printf "Then use "; tput bold; printf "cd "; tput sgr0; echo " followed by a space and the name of a location to move."
 sleep 1
