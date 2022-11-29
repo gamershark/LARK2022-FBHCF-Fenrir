@@ -5,6 +5,11 @@ Name of Game: Bloodstained Clock
 
 Developed by: Jacob Paccione and Christian Rodriguez
 
-Narrative: You play as the host of the Internation Time Metting, a conference of the world's most powerful time travelers. On the first night of the conference, one of the guests suddenly gets killed, and now it's your job to figure out who did the deed, but also when.
+Narrative:
+You're the host of the International Time Conference: a gathering of the world's most prestigious time travelers.
+On the first night of the conference, one of the guests is inexplicably murderized.
+Now it's your job to figure out not only who did the deed, but also when.
 
-Instructions: Unzip TAR file, change directory and run the game using the command ". main.sh". All other instructions are baked into game.
+Instructions:
+Using a compatible Sony DualShock 4 (TM) controller, press the corresponding buttons.
+You're a gamer right? Figure it out :D
