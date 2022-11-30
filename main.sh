@@ -17,7 +17,6 @@ function screenSize() {
 # Save screen
 tput smcup
 
-
 # Menu Text
 function mainMenu() {
     clear

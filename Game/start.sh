@@ -183,8 +183,11 @@ LS_COUNT=0
 DAY=1
 ACTIONS=0
 
+# Setting starting area
+PS1="[ Location: Hub | Day 1 ]$ "
+cd Hub
+
 # Instructions
+clear
 printf "You start in the Hub area, located in present day Lakeland. "
-sleep 1
-printf "Use the command "; tput bold; printf "ls "; tput sgr0; echo "to list useful locations or objects."
-sleep 1
+sleep 1; printf "Use the command "; tput bold; printf "ls "; tput sgr0; echo "to list useful locations or objects."
