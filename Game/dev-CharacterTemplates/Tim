@@ -17,45 +17,45 @@ sleep 1
 case $selection in
 1)
     if [[ $KILLER -eq 0 ]]; then
-	tput bold; printf "Tim: "; tput sgr0; printf "Theodora lately has been acting real strange, partner. "
-	sleep 1; printf "She's acting more 'royal', "
-	sleep 1; echo "like she's trying to gain the public's opinion on something."
+		tput bold; printf "Tim: "; tput sgr0; printf "Theodora lately has been acting real strange, partner. "
+		sleep 1; printf "She's acting more 'royal', "
+		sleep 1; echo "like she's trying to gain the public's opinion on something."
     elif [[ $KILLER -eq 1 ]]; then
-	tput bold; printf "Tim: "; tput sgr0; printf "Look, partner. "
-	sleep 1; printf "I don't know who else you've talked to, "
-	sleep 1; echo "but I promise the only folks I kill are way before your time."
+		tput bold; printf "Tim: "; tput sgr0; printf "Look, partner. "
+		sleep 1; printf "I don't know who else you've talked to, "
+		sleep 1; echo "but I promise the only folks I kill are way before your time."
     elif [[ $KILLER -eq 2 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "Not quite sure about Robert. "
-	sleep 1; printf "He's been acting a bit scary, "
-	sleep 1; echo "holding around around his rifle and such."
+		tput bold; printf "Tim: "; tput srg0; printf "Not quite sure about Robert. "
+		sleep 1; printf "He's been acting a bit scary, "
+		sleep 1; echo "holding around around his rifle and such."
     elif [[ $KILLER -eq 3 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "All that high tech junk that Mort owns has always scared me. "
-	sleep 1; echo "That, and his large ego about being 'the most far ahead' may've got to him."
+		tput bold; printf "Tim: "; tput srg0; printf "All that high tech junk that Mort owns has always scared me. "
+		sleep 1; echo "That, and his large ego about being 'the most far ahead' may've got to him."
     else
-	tput bold; printf "Tim: "; tput srg0; printf "I love Adam to death, "
-	sleep 1; echo "but he's been walking around overnight talking to himself, I think."
+		tput bold; printf "Tim: "; tput srg0; printf "I love Adam to death, "
+		sleep 1; echo "but he's been walking around overnight talking to himself, I think."
     fi
     ACTIONS=$ACTIONS+1
     checkActions
     ;;
 2)
     if [[ $LOCATION -eq 0 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "Well, think about it. "
-	sleep 1; printf "What seems like the best place, with the least 'new' tech to commit a crime?"
-	sleep 1; echo "That's right. The old middle ages."
+		tput bold; printf "Tim: "; tput srg0; printf "Well, think about it. "
+		sleep 1; printf "What seems like the best place, with the least 'new' tech to commit a crime?"
+		sleep 1; echo "That's right. The old middle ages."
     elif [[ $LOCATION -eq 1 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "I promise you nothing's happened outside of my own time. "
-	sleep 1; echo "Trust me, I know everything that happens in my small town."
+		tput bold; printf "Tim: "; tput srg0; printf "I promise you nothing's happened outside of my own time. "
+		sleep 1; echo "Trust me, I know everything that happens in my small town."
     elif [[ $LOCATION -eq 2 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "The guns over in the Wars are so advanced, "
-	sleep 1; printf "that even I would commit murders there! "
-	sleep 1;echo "Not that I killed Kay, it's just my job."
+		tput bold; printf "Tim: "; tput srg0; printf "The guns over in the Wars are so advanced, "
+		sleep 1; printf "that even I would commit murders there! "
+		sleep 1;echo "Not that I killed Kay, it's just my job."
     elif [[ $LOCATION -eq 3 ]]; then
-	tput bold; printf "Tim: "; tput srg0; printf "Aside from the Great War, "
-	sleep 1; echo "the far far future tech is so advanced that it just makes sense to kill someone there."
+		tput bold; printf "Tim: "; tput srg0; printf "Aside from the Great War, "
+		sleep 1; echo "the far far future tech is so advanced that it just makes sense to kill someone there."
     else
-	tput bold; printf "Tim: "; tput srg0; printf "I'm not sure if I'm just seeing things, "
-	sleep 1; echo "I could've sworn that I saw Kay walk through Adam's portal at some point."
+		tput bold; printf "Tim: "; tput srg0; printf "I'm not sure if I'm just seeing things, "
+		sleep 1; echo "I could've sworn that I saw Kay walk through Adam's portal at some point."
     fi
     ACTIONS=$ACTIONS+1
     checkActions

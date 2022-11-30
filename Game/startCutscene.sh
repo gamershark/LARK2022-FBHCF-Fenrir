@@ -11,8 +11,8 @@ sleep 1; echo ""; echo "Press any key to continue"; read -n 1
 # Character introductions
 tput cuu1
 echo "The group that make up the conference include:"
-sleep 1; tput setaf 0; setaf 5; printf "Princess Theodora"; sleep 1; tput sgr0; tput setaf 7; echo ", the most royal princess from the middle ages,"
-sleep 1; tput setaf 3; printf "Cantankerous Tim"; sleep 1; tput sgr0; echo ", the most powerful gunsman of the wild west,"
+sleep 1; tput setaf 0; printf "Princess Theodora"; sleep 1; tput setaf 7; echo ", the most royal princess from the middle ages,"
+sleep 1; tput setaf 3; printf "Cantankerous Tim"; sleep 1; tput setaf 7; echo ", the most powerful gunsman of the wild west,"
 sleep 1; tput setaf 2; printf "Robert Carlton"; sleep 1; tput setaf 7; echo ", the brightest engineer from the times of the Great War,"
 sleep 1; tput setaf 6; printf "Adam Scott"; sleep 1; tput setaf 7; echo ", the best actor of the close future,"
 sleep 1; tput setaf 4; printf "Kay"; sleep 1; tput setaf 7; echo ", the strongest warrior of the Mad Max-esque future,"
@@ -35,7 +35,7 @@ echo "'AAAHHHHHHH!!!!!'"
 sleep 1; echo ""; echo "You leave your room and enter the lobby, to see a sight that horrors you."
 sleep 1; printf "The deceased body of "; tput setaf 4; echo "Kay "; tput setaf 7; echo "with an onimous note placed on top of them."
 sleep 1; echo ""; printf "Being the host, now it's your job to not only figure out who was the killer, "
-sleep 1; printf "but also when. "
+sleep 1; printf "but also when."
 sleep 1; echo ""; echo "Press any key to continue"; read -n 1
 
 # PS1 variable thing

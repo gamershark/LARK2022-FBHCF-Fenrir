@@ -17,61 +17,46 @@ sleep 1
 case $selection in
 1)
     if [[ $KILLER -eq 0 ]]; then
-	tput bold; printf "Theodora: "; tput sgr0; printf "Ho, ho ho! Assuredly not, young one. "
-	sleep 1
-	printf "I was fast asleep in my own time, "
-	sleep 1
-	echo "and we're not quite at the time where nobelty murder innocent civillians."
+		tput bold; printf "Theodora: "; tput sgr0; printf "Ho, ho ho! Assuredly not, young one. "
+		sleep 1; printf "I was fast asleep in my own time, "
+		sleep 1; echo "and we're not quite at the time where nobelty murder innocent civillians."
     elif [[ $KILLER -eq 1 ]]; then
-	tput bold; printf "Theodora: "; tput sgr0; printf "Alas, I don't know much about some of the folk around here, "
-	sleep 1
-	echo "but the Tim folk is new here, and honestly even I'm scared of his time."
+		tput bold; printf "Theodora: "; tput sgr0; printf "Alas, I don't know much about some of the folk around here, "
+		sleep 1; echo "but the Tim folk is new here, and honestly even I'm scared of his time."
     elif [[ $KILLER -eq 2 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "I don't have much to go off of, young one, "
-	sleep 1
-	printf "but Adam has been giving me a weird look lately. "
-	sleep 1
-	echo "He's been eying down Kay lately when we've met like he had some vendetta against her."
+		tput bold; printf "Theodora: "; tput srg0; printf "I don't have much to go off of, young one, "
+		sleep 1; printf "but Adam has been giving me a weird look lately. "
+		sleep 1; echo "He's been eying down Kay lately when we've met like he had some vendetta against her."
     elif [[ $KILLER -eq 3 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "Look. "
-	sleep 1
-	printf "I love Robert, but lately he's been freaking me out, "
-	sleep 1
-	printf "scaring me, if you will. "
-	sleep 1
-	printf "I don't know what it is, or even If I'm just seeing things, "
-	sleep 1
-	echo "but I don't trust him right now."
+		tput bold; printf "Theodora: "; tput srg0; printf "Look. "
+		sleep 1; printf "I love Robert, but lately he's been freaking me out, "
+		sleep 1; printf "scaring me, if you will. "
+		sleep 1; printf "I don't know what it is, or even If I'm just seeing things, "
+		sleep 1; echo "but I don't trust him right now."
     else
-	tput bold; printf "Theodora: "; tput srg0; printf "I thought I heard Mort out and about like a plague in the night, "
-	sleep 1
-	echo "But this was before I went back to my time, so I can't be sure."
+		tput bold; printf "Theodora: "; tput srg0; printf "I thought I heard Mort out and about like a plague in the night, "
+		sleep 1; echo "But this was before I went back to my time, so I can't be sure."
     fi
     ACTIONS=$ACTIONS+1
     checkActions
     ;;
 2)
     if [[ $LOCATION -eq 0 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "Hm, I personally didn't hear anything in my time, "
-	sleep 1
-	echo "but of course the castle walls are near soundproof."
+		tput bold; printf "Theodora: "; tput srg0; printf "Hm, I personally didn't hear anything in my time, "
+		sleep 1; echo "but of course the castle walls are near soundproof."
     elif [[ $LOCATION -eq 1 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "I could've sworn I saw Kay over in that time before the night started, "
-	sleep 1
-	echo "but I can't for the life of me remember if anyone was with her."
+		tput bold; printf "Theodora: "; tput srg0; printf "I could've sworn I saw Kay over in that time before the night started, "
+		sleep 1; echo "but I can't for the life of me remember if anyone was with her."
     elif [[ $LOCATION -eq 2 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "I've visited Adam's time for a bit of food, "
-	sleep 1
-	printf "I do love the food of the future, "
-	echo "and I did notice some things like rugs in odd spots..."
+		tput bold; printf "Theodora: "; tput srg0; printf "I've visited Adam's time for a bit of food, "
+		sleep 1; printf "I do love the food of the future, "
+		sleep 1; echo "and I did notice some things like rugs in odd spots..."
     elif [[ $LOCATION -eq 3 ]]; then
-	tput bold; printf "Theodora: "; tput srg0; printf "I've always tried to avoid the Great War... "
-	sleep 1
-	echo "Usually the most deaths happen around that time."
+		tput bold; printf "Theodora: "; tput srg0; printf "I've always tried to avoid the Great War... "
+		sleep 1; echo "Usually the most deaths happen around that time."
     else
-	tput bold; printf "Theodora: "; tput srg0; printf "I don't trust many of those light swords or what not of the far far future... "
-	sleep 1
-	echo "It wouldn't surprise me at all if anything bad happened over there."
+		tput bold; printf "Theodora: "; tput srg0; printf "I don't trust many of those light swords or what not of the far far future... "
+		sleep 1; echo "It wouldn't surprise me at all if anything bad happened over there."
     fi
     ACTIONS=$ACTIONS+1
     checkActions

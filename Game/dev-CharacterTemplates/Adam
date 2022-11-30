@@ -17,22 +17,22 @@ sleep 1
 case $selection in
 1)
     if [[ $KILLER -eq 0 ]]; then
-	tput bold; printf "Adam: "; tput sgr0; printf "Not quite sure what it is, "
-	sleep 1; printf "but Tim's been acting weird recently. "
-	sleep 1; echo "Something about it seems like he's hiding something..."
+		tput bold; printf "Adam: "; tput sgr0; printf "Not quite sure what it is, "
+		sleep 1; printf "but Tim's been acting weird recently. "
+		sleep 1; echo "Something about it seems like he's hiding something..."
     elif [[ $KILLER -eq 1 ]]; then
-	tput bold; printf "Adam: "; tput sgr0; printf "To be completely honest, "
-	sleep 1; printf "even though I'm very good friends with Theodora, "
-	sleep 1; echo "I think she's been hiding something."
+		tput bold; printf "Adam: "; tput sgr0; printf "To be completely honest, "
+		sleep 1; printf "even though I'm very good friends with Theodora, "
+		sleep 1; echo "I think she's been hiding something."
     elif [[ $KILLER -eq 2 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "Something about Robert is giving me a weird feeling... "
-	sleep 1; printf "He's been a good friend of mine for a long time, "
-	sleep 1; echo "but now it seems like he's hiding secrets."
+		tput bold; printf "Adam: "; tput srg0; printf "Something about Robert is giving me a weird feeling... "
+		sleep 1; printf "He's been a good friend of mine for a long time, "
+		sleep 1; echo "but now it seems like he's hiding secrets."
     elif [[ $KILLER -eq 3 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "I haven't talked to many people around the event so far, "
+		tput bold; printf "Adam: "; tput srg0; printf "I haven't talked to many people around the event so far, "
 	sleep 1; echo "but personally I can't think of any leads right now."
     else
-	tput bold; printf "Adam: "; tput srg0; printf "I could've sworn I heart Mort outside overnight, "
+		tput bold; printf "Adam: "; tput srg0; printf "I could've sworn I heart Mort outside overnight, "
 	sleep 1; echo "but I have no clue what he could've been doing."
     fi
     ACTIONS=$ACTIONS+1
@@ -40,20 +40,20 @@ case $selection in
     ;;
 2)
     if [[ $LOCATION -eq 0 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "I think I saw something leaking out of the wild west portal, "
-	sleep 1; echo "but things leak out of portals all the time."
+		tput bold; printf "Adam: "; tput srg0; printf "I think I saw something leaking out of the wild west portal, "
+		sleep 1; echo "but things leak out of portals all the time."
     elif [[ $LOCATION -eq 1 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "What if instead of a murder, it was disease? "
-	sleep 1; echo "I think I saw Kay enter the middle ages portal some time last night."
+		tput bold; printf "Adam: "; tput srg0; printf "What if instead of a murder, it was disease? "
+		sleep 1; echo "I think I saw Kay enter the middle ages portal some time last night."
     elif [[ $LOCATION -eq 2 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "The Great War is full of weapons. "
-	sleep 1; printf "I wouldn't be surprised if whoever it was brought Kay in there, "
-	sleep 1;echo "then took them out like a soldier."
+		tput bold; printf "Adam: "; tput srg0; printf "The Great War is full of weapons. "
+		sleep 1; printf "I wouldn't be surprised if whoever it was brought Kay in there, "
+		sleep 1;echo "then took them out like a soldier."
     elif [[ $LOCATION -eq 3 ]]; then
-	tput bold; printf "Adam: "; tput srg0; printf "I like to keep my areas clean, "
-	sleep 1; echo "and nothing seemed amist from my time this morning."
+		tput bold; printf "Adam: "; tput srg0; printf "I like to keep my areas clean, "
+		sleep 1; echo "and nothing seemed amist from my time this morning."
     else
-	tput bold; printf "Adam: "; tput srg0; printf "The lightsabers or whatever they have in the far far future are definitely scary. "
+		tput bold; printf "Adam: "; tput srg0; printf "The lightsabers or whatever they have in the far far future are definitely scary. "
 	sleep 1; echo "There's a chance someone could've brought Kay in there."
     fi
     ACTIONS=$ACTIONS+1

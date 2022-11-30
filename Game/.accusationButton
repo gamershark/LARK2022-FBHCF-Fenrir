@@ -16,4 +16,7 @@ Y)
     ;;
 N)
     ;;
+*)
+    echo "Invalid selection"
+    ;;
 esac
