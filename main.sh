@@ -20,13 +20,8 @@ tput smcup
 # Menu Text
 function mainMenu() {
     clear
-    cat <<EOF
-  BLOODSTAINED CLOCK
-======================
-1. New Game
-2. About
-0. Quit
-EOF
+    cat $FILELOCATION/Game/ascii
+    echo ""
 
     read -p "Enter Selection [0-2]: " selection
     case $selection in
