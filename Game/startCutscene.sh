@@ -18,7 +18,7 @@ cat $FILELOCATION/Game/dev-AsciiArt/ascii-western; sleep 1; echo ""; echo "Press
 sleep 1; tput setaf 2; printf "Robert Carlton"; sleep 1; tput setaf 7; echo ", the brightest engineer from the times of the Great War,"
 cat $FILELOCATION/Game/dev-AsciiArt/ascii-war; sleep 1; echo ""; echo "Press any key to continue"; read -n 1
 sleep 1; tput setaf 6; printf "Adam Scott"; sleep 1; tput setaf 7; echo ", the best actor of the close future,"
-cat $FILELOCATION/Game/dev-AsciiArt/ascii-gas; sleep 1; echo ""; echo "Press any key to continue"; read -n 1
+cat $FILELOCATION/Game/dev-AsciiArt/ascii-phone; sleep 1; echo ""; echo "Press any key to continue"; read -n 1
 sleep 1; tput setaf 4; printf "Kay"; sleep 1; tput setaf 7; echo ", the strongest warrior of the Mad Max-esque future,"
 cat $FILELOCATION/Game/dev-AsciiArt/ascii-gas; sleep 1; echo ""; echo "Press any key to continue"; read -n 1
 sleep 1; printf "and finally "; sleep 1; tput setaf 1; printf "Mort Matten"; sleep 1; tput setaf 7; echo ", the creator of the Space Ranger league from a future far, far away."
