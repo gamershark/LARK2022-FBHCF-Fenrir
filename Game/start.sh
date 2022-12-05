@@ -2,7 +2,6 @@
 
 # Picks murderer and assigns value to variables
 # Person = KILLER
-# Weapon = WEAPON
 # Time Peroid = PLACE
 function pickMurderer() {
     characters[0]="theodora"
