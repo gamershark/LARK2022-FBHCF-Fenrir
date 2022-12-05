@@ -21,7 +21,8 @@ tput smcup
 function mainMenu() {
     clear
     cat $FILELOCATION/Game/ascii
-    echo ""
+    echo "
+    "
 
     read -p "Enter Selection [0-2]: " selection
     case $selection in
