@@ -63,15 +63,15 @@ function setLocations() {
 	MIDDLE_CHAR1=$(($RANDOM % $char_size))
     done
     if [[ $MIDDLE_CHAR1 -eq 0 ]]; then
-	cp $FILELOCATION/Game/dev-CharacterTemplates/Theodora $FILELOCATION/Game/Hub/.middle/Theodora
+	cp $FILELOCATION/Game/dev-CharacterTemplates/Theodora $FILELOCATION/Game/Hub/.time-middle/Theodora
     elif [[ $MIDDLE_CHAR1 -eq 1 ]]; then
-	cp $FILELOCATION/Game/dev-CharacterTemplates/Tim $FILELOCATION/Game/Hub/.middle/Tim
+	cp $FILELOCATION/Game/dev-CharacterTemplates/Tim $FILELOCATION/Game/Hub/.time-middle/Tim
     elif [[ $MIDDLE_CHAR1 -eq 2 ]]; then
-	cp $FILELOCATION/Game/dev-CharacterTemplates/Robert $FILELOCATION/Game/Hub/.middle/Robert
+	cp $FILELOCATION/Game/dev-CharacterTemplates/Robert $FILELOCATION/Game/Hub/.time-middle/Robert
     elif [[ $MIDDLE_CHAR1 -eq 3 ]]; then
-	cp $FILELOCATION/Game/dev-CharacterTemplates/Adam $FILELOCATION/Game/Hub/.middle/Adam
+	cp $FILELOCATION/Game/dev-CharacterTemplates/Adam $FILELOCATION/Game/Hub/.time-middle/Adam
     else
-	cp $FILELOCATION/Game/dev-CharacterTemplates/Mort $FILELOCATION/Game/Hub/.middle/Mort
+	cp $FILELOCATION/Game/dev-CharacterTemplates/Mort $FILELOCATION/Game/Hub/.time-middle/Mort
     fi
 
    #The War
