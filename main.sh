@@ -20,7 +20,7 @@ tput smcup
 # Menu Text
 function mainMenu() {
     clear
-    cat $FILELOCATION/Game/ascii
+    cat $FILELOCATION/Game/dev-AsciiArt/title
     echo "
     "
 
